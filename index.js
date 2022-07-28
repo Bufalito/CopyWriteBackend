@@ -49,7 +49,6 @@ app.get("/iecho", (request, response) => {
         }) && console.log({ error: "no text" })
 })
 
-const PORT = 3001
-app.listen(PORT, () => {
+app.listen(process.env.PORT, () => {
     console.log(`Server running on port ${PORT}`)
 })
